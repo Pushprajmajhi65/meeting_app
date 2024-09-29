@@ -40,12 +40,12 @@
     <main class="container-fluid d-flex flex-column home-wrap">
         <div class="g-top">
             <div class="top-remote-video-show-wrap d-flex">
-                <div id="meetingContainer" class="w-75 d-none">
+                <div id="meetingContainer" class="w-75 " style="display: none;">
                     <div class="class-wrap" style="background-color: black;"></div>
                     <div class="video-wrap" id="divUsers" style="display: flex; flex-wrap: wrap;">
                         
                         <div id="me" class="userbox display-center flex-column">
-                            <h2 class="display-center" style="font-size: 14px;">Pushpraj</h2>
+                            <h2 class="display-center" style="font-size: 14px;" id="nameMe">Pushpraj</h2>
                             <div class="display-center">
                                 <video autoplay muted id="localVideoplayer"></video>
                             </div>
@@ -102,7 +102,7 @@
                 <div class="end-call-wrap action-icon-style display-center mr-2 cursor-pointer">
                     <span class="material-icons text-danger">call</span>
                 </div>
-                <div class="video-toggle-wrap action-icon-style display-center cursor-pointer">
+                <div class="video-toggle-wrap action-icon-style display-center cursor-pointer" id="videoCamOnOff">
                     <span class="material-icons">videocam_off</span>
                 </div>
 
@@ -111,7 +111,7 @@
 
             </div>
             <div class="bottom-right d-flex just-content-center align-item-center mr-3 " style="height: 10vh;">
-                <div class="present-now-wrap d-flex justi-content-center flex-column align-items-center mr-5 cursor-pointer">
+                <div class="present-now-wrap d-flex justi-content-center flex-column align-items-center mr-5 cursor-pointer" id="btnScreenShareOnOf">
                     <span class="material-icons">present_to_all</span>
                 </div>
                 <div>present now</div>
